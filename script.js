@@ -1,7 +1,7 @@
-function withClosure(value = 0) {
+function withClosure() {
+    let value = 0;
     return function(num) {
-        value += num;
-        return value;
+        return value += num;
     }
 }
 
